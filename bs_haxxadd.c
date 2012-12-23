@@ -9,10 +9,10 @@
      * Date: 03/12/2012                                           *
      * -----------------------------------------------------------*
      * Tested: Unreal32                                           *
-	 * -----------------------------------------------------------*
-	 * Code pour simplifier la vie plutot que de taper la commande*
-	 * suivante: "/msg chanserv vop add username" on poura tous   *
-	 * simplement taper "!vop add username"                       *
+     * -----------------------------------------------------------*
+     * Code pour simplifier la vie plutot que de taper la commande*
+     * suivante: "/msg chanserv vop add username" on poura tous   *
+     * simplement taper "!vop add username"                       *
      * -----------------------------------------------------------*
      *                                                            *
      * ------------------------Commands---------------------------*
@@ -171,13 +171,13 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
                                  param2);
 								 
                         notice(whosends(ci), u->nick,
-                               "%s a été ajouté a la liste des SOP ", param2);
+                               "%s a ï¿½tï¿½ ajoutï¿½ a la liste des SOP ", param2);
                     }
 
                     else {
 
                         notice(whosends(ci), u->nick,
-                               "%s ne peut etre ajouté a la liste des SOP, %s n'est pas conecté !",
+                               "%s ne peut etre ajoutï¿½ a la liste des SOP, %s n'est pas conectï¿½ !",
                                param2, param2);
                     }
 				}
@@ -186,7 +186,7 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
 			    send_cmd(ci->bi->nick, "MSG CHANSERV SOP %s %s", ci->name, param1);
 				
 				notice(whosends(ci), u->nick,
-                               "la liste des SOP à été vidé");
+                               "la liste des SOP ï¿½ ï¿½tï¿½ vidï¿½");
 			}
 
         }
@@ -219,13 +219,13 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
                                  param2);
 								 
                         notice(whosends(ci), u->nick,
-                               "%s a été ajouté a la liste des AOP ", param2);
+                               "%s a ï¿½tï¿½ ajoutï¿½ a la liste des AOP ", param2);
                     }
 
                     else {
 
                         notice(whosends(ci), u->nick,
-                               "%s ne peut etre ajouté a la liste des AOP, %s n'est pas conecté !",
+                               "%s ne peut etre ajoutï¿½ a la liste des AOP, %s n'est pas conectï¿½ !",
                                param2, param2);
                     }
 				}
@@ -234,7 +234,7 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
 			    send_cmd(ci->bi->nick, "MSG CHANSERV AOP %s %s", ci->name, param1);
 				
 				notice(whosends(ci), u->nick,
-                               "la liste des AOP à été vidé");
+                               "la liste des AOP ï¿½ ï¿½tï¿½ vidï¿½");
 			}
 
         }else if(!stricmp(cmd, "!hop")) {
@@ -266,13 +266,13 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
                                  param2);
 								 
                         notice(whosends(ci), u->nick,
-                               "%s a été ajouté a la liste des HOP ", param2);
+                               "%s a ï¿½tï¿½ ajoutï¿½ a la liste des HOP ", param2);
                     }
 
                     else {
 
                         notice(whosends(ci), u->nick,
-                               "%s ne peut etre ajouté a la liste des HOP, %s n'est pas conecté !",
+                               "%s ne peut etre ajoutï¿½ a la liste des HOP, %s n'est pas conectï¿½ !",
                                param2, param2);
                     }
 				}
@@ -281,7 +281,7 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
 			    send_cmd(ci->bi->nick, "MSG CHANSERV HOP %s %s", ci->name, param1);
 				
 				notice(whosends(ci), u->nick,
-                               "la liste des HOP à été vidé");
+                               "la liste des HOP ï¿½ ï¿½tï¿½ vidï¿½");
 			}
 
         }else if(!stricmp(cmd, "!vop")) {
@@ -312,13 +312,13 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
                                  param2);
 								 
                         notice(whosends(ci), u->nick,
-                               "%s a été ajouté a la liste des vOP ", param2);
+                               "%s a ï¿½tï¿½ ajoutï¿½ a la liste des vOP ", param2);
                     }
 
                     else {
 
                         notice(whosends(ci), u->nick,
-                               "%s ne peut etre ajouté a la liste des VOP, %s n'est pas conecté !",
+                               "%s ne peut etre ajoutï¿½ a la liste des VOP, %s n'est pas conectï¿½ !",
                                param2, param2);
                     }
 				}
@@ -327,7 +327,7 @@ int mynewmsg(User * u, ChannelInfo * ci, char *my_buffer)
 			    send_cmd(ci->bi->nick, "MSG CHANSERV VOP %s %s", ci->name, param1);
 				
 				notice(whosends(ci), u->nick,
-                               "la liste des vOP à été vidé");
+                               "la liste des vOP ï¿½ ï¿½tï¿½ vidï¿½");
 			}
 
         }
